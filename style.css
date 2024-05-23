@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #010E20;
 }
 header {
     background-color: #71c2e5;
@@ -17,11 +18,9 @@ header {
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(/MWbg.png);
+    background-image: url(/BgBlue.png);
     background-size:cover;
     background-position: center;
-    
-    /* opacity: 0.70; */
 }
 
 #header .container nav ul{
@@ -99,15 +98,28 @@ nav ul hr{
     
     margin: 0px;
     height: 2px;
-    background-color: #00c5b8;
+    background-color: #62b6cb;
+}
+.hero{
+    display: flex;
+    width: 100vw;
+    height: 88vh;
+    align-items: center;
+}
+#bgimage{
+    height: 93%;
+    width: 80%;
+    padding-top: 10%;
 }
 .header-text {
-    margin-top: 15%;
-    padding: 0px 10%;
-    color: #C5C6C7;
+    width: 90vw;
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 0%;
+    color: white;
 }
 .header-text h1 span{
-    color: #1f6981;
+    color: #fb8500;
 }
 .header-text h1{
     font-size: 75px;
