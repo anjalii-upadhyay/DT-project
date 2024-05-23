@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #71c2e5;
+    color: #f8f5f7;
+    padding: 0px 0;
+    text-align: left;
+}
+.container {
+    max-width: 800px;
+    margin: 0px;
+    padding: 10px;
+    background-color: #000000;
+}
+#header{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(MW2.jpg);
+    background-size:cover;
+    background-position: center;
+    opacity: 0.70; */
+}
+
+#header .container nav ul{
+    position: fixed;
+    width: 100vw;
+    background-color: #000000;
+    background-size: 100vw;
+    padding-top: 30px;
+}
+.container{
+    padding: 10px 0%;
+}
+.container h1{
+    font-size: 50px;
+}
+.container p{
+    font-size: 20px;
+}
+.container.header-text{
+    flex: 1;
+    padding: 20px;
+}
+.image-container{
+    flex: 0 0 200px;
+    height: 800px;
+    width: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 20px;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        margin: 20px 0 0 0;
+    }
+}
+nav{
+    display: flex;
+    width: 100vw;
+    height: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 30px 20px;
+    position: relative;
+    float: right;
+    padding-right: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 255, 242);
+    font-size: 25px;
+    position: relative;
+    align-content: right;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px ;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text {
+    margin-top: 15%;
+    padding: 0px 10%;
+    color: whitesmoke;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
