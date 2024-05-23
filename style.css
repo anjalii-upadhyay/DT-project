@@ -39,9 +39,10 @@ header {
 }
 .container h1{
     font-size: 50px;
+    margin-bottom: 0%;
 }
 .container p{
-    font-size: 20px;
+    font-size: 25px;
 }
 .container.header-text{
     flex: 1;
@@ -67,16 +68,15 @@ nav ul img{
 }
 nav ul li{
     list-style: none;
-    display: inline-block;
     margin-top: 45px;
     position: relative;
     float: right;
     padding-left: 80px;
-    padding-right: 10px;
+    padding-right: 2%;
 }
 nav ul li a{
     text-decoration: none;
-    color: #71c2e5;
+    color: #69c6ff;
     font-size: 25px;
     position: relative;
     align-content: right;
@@ -125,7 +125,7 @@ nav ul hr{
 } */
 
 .header-text {
-    width: 90vh;
+    width: 100vh;
     margin-top: 5%;
     padding-left: 10%;
     padding-right: 0%;
@@ -133,7 +133,8 @@ nav ul hr{
 }
 
 .header-text h1 span{
-    color: #fb8500;
+    color: aqua;
+    margin-bottom: 0%;
 }
 
 .header-text h1{
@@ -141,8 +142,36 @@ nav ul hr{
 }
 
 .info{
-    color: #f8f5f7;
+    color: #d3d9d4;
     width: 80%;
     align-items: center;
-    font-size: 50px;
+    font-size: 25px;
+    margin: 0% 5.5%;
+    margin-top: 10%;
+    margin-bottom: 20%;
 }
+.info h2{
+    color: #71c2e5;
+}
+
+#contact h3{
+    font-size: 50px;
+       color: white;
+       margin-bottom: 20px;
+       margin-top: 150px;
+       padding-left: 5.5%;
+}
+
+#contact ul li{
+    font-size: 20px;
+    list-style: none;
+    color: #d3d9d4;
+    padding-left: 3%;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+ }
