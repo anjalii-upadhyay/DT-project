@@ -3,24 +3,28 @@ body {
     padding: 0;
     background-color: #010E20;
 }
+
 header {
     background-color: #71c2e5;
     color: #f8f5f7;
     padding: 0px 0;
     text-align: left;
 }
+
 .container {
     max-width: 800px;
     margin: 0px;
     padding-top: 10px;
-    /* background-color: #000000; */
 }
+
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(/BgBlue.png);
-    background-size:cover;
+    background-image: url("/1.png");
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 #header .container nav ul{
@@ -28,6 +32,7 @@ header {
     width: 100vw;
     background-size: 100vw;
     padding-top: 30px;
+    background-color: #010E20;
 }
 .container{
     padding: 10px 0%;
@@ -71,7 +76,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: #71c2e5;
     font-size: 25px;
     position: relative;
     align-content: right;
@@ -100,27 +105,44 @@ nav ul hr{
     height: 2px;
     background-color: #62b6cb;
 }
-.hero{
+/* .hero{
     display: flex;
     width: 100vw;
     height: 88vh;
     align-items: center;
+    flex: -1;
+    background-image: url(/BgCircle-removebg-preview.png);
 }
-#bgimage{
+ #bgimage{
     height: 93%;
     width: 80%;
     padding-top: 10%;
-}
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;background-size: cover;
+    position: sticky;
+    flex: -1;
+} */
+
 .header-text {
-    width: 90vw;
+    width: 90vh;
     margin-top: 5%;
     padding-left: 10%;
     padding-right: 0%;
     color: white;
 }
+
 .header-text h1 span{
     color: #fb8500;
 }
+
 .header-text h1{
     font-size: 75px;
+}
+
+.info{
+    color: #f8f5f7;
+    width: 80%;
+    align-items: center;
+    font-size: 50px;
 }
