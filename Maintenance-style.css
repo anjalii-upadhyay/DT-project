@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #010E20;
+}
+
+header {
+    background-color: #71c2e5;
+    color: #f8f5f7;
+    padding: 0px 0;
+    text-align: left;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0px;
+    padding-top: 10px;
+    display: flex;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/BlueTextureBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header .container nav ul{
+    position: fixed;
+    width: 100vw;
+    background-size: 100vw;
+    padding-top: 30px;
+}
+
+.container{
+    padding: 10px 0%;
+}
+
+nav{
+    display: flex;
+    width: 100vw;
+    height: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    background-color: #070e16;
+}
+
+nav ul img{
+    height: 70px;
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+nav ul li{
+    list-style: none;
+    margin-top: 45px;
+    position: relative;
+    float: right;
+    padding-left: 80px;
+    padding-right: 2%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #69c6ff;
+    font-size: 25px;
+    position: relative;
+    align-content: right;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px ;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav ul li a:hover{
+    text-decoration-color: black;
+}
+
+nav ul hr{  
+    margin: 0px;
+    height: 2px;
+    background-color: #62b6cb;
+}
+
+.workshopLayout img{
+    height: 120%;
+    margin-top: 10%;
+    margin-left: 8.5%;
+}
+
+.printer img{
+    margin-right: -20%;
+    position: absolute;
+    height: 20vh;
+    width: 20vw;
+    left: 12.5vh;
+    top: 21vh;
+    border: 4px solid aqua;
+    border-radius: 4px;
+}
+
+.tableSaw img{
+    margin-right: -20%;
+    position: absolute;
+    height: 28vh;
+    width: 19vw;
+    right: 91.7vh;
+    top: 21.5vh;
+    border: 4px solid aqua;
+    border-radius: 4px;
+}
+
+.smoothening img{
+    margin-right: -20%;
+    position: absolute;
+    height: 28vh;
+    right: 54.3vh;
+    top: 23vh;
+    border: 4px solid aqua;
+    border-radius: 4px;
+}
+
+.painting img{
+    margin-right: -20%;
+    position: absolute;
+    height: 31vh;
+    width: 16vw;
+    right: 54vh;
+    bottom: 4vh;
+    border: 4px solid aqua;
+    border-radius: 4px;
+}
+
+.fitting img{
+    margin-right: -20%;
+    position: absolute;
+    height: 23.5vh;
+    width: 15vw;
+    right: 136vh;
+    bottom: 4vh;
+    border: 4px solid aqua;
+    border-radius: 4px;
+}
+
+.welding img{
+    margin-right: -20%;
+    position: absolute;
+    height: 28vh;
+    width: 27vw;
+    left: 59vh;
+    top: 21.5vh;
+    border: 4px solid aqua;
+    border-radius: 4px;
+}
+
+.lathe img{
+    margin-right: -20%;
+    position: absolute;
+    height: 22vh;
+    width: 32vw;
+    left: 12.5vh;
+    bottom: 4vh;
+    border: 4px solid aqua;
+    border-radius: 4px;
+}
+
+.office img{
+    margin-right: -20%;
+    position: absolute;
+    height: 22vh;
+    width: 19vw;
+    right: 91.7vh;
+    bottom: 4vh;
+    border: 4px solid aqua;
+    border-radius: 4px;
+}
+
+/* .office{
+    margin-right: -20%;
+    position: absolute;
+    height: 22vh;
+    width: 19vw;
+    right: 91.7vh;
+    bottom: 4vh;
+    border: 4px solid aqua;
+    border-radius: 4px;
+} */
+
+/* .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  } */
+  
+  .office .working{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .office:hover .working {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .office .working::after {
+    content: " ";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }

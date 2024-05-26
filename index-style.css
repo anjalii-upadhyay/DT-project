@@ -32,22 +32,26 @@ header {
     width: 100vw;
     background-size: 100vw;
     padding-top: 30px;
-    background-color: #010E20;
 }
+
 .container{
     padding: 10px 0%;
 }
+
 .container h1{
     font-size: 50px;
     margin-bottom: 0%;
 }
+
 .container p{
     font-size: 25px;
 }
+
 .container.header-text{
     flex: 1;
     padding: 20px;
 }
+
 nav{
     display: flex;
     width: 100vw;
@@ -56,16 +60,19 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 nav ul{
     margin: 0px;
     padding: 0px;
-    /* margin-top: 10px; */
+    background-color: #070e16;
 }
+
 nav ul img{
     height: 70px;
     padding-top: 30px;
     padding-left: 5px;
 }
+
 nav ul li{
     list-style: none;
     margin-top: 45px;
@@ -74,6 +81,7 @@ nav ul li{
     padding-left: 80px;
     padding-right: 2%;
 }
+
 nav ul li a{
     text-decoration: none;
     color: #69c6ff;
@@ -91,38 +99,21 @@ nav ul li a::after{
     left: 0;
     bottom: -6px ;
     transition: 0.5s;
-    
 }
+
 nav ul li a:hover::after{
     width: 100%;
 }
+
 nav ul li a:hover{
     text-decoration-color: black;
 }
-nav ul hr{
-    
+
+nav ul hr{  
     margin: 0px;
     height: 2px;
     background-color: #62b6cb;
 }
-/* .hero{
-    display: flex;
-    width: 100vw;
-    height: 88vh;
-    align-items: center;
-    flex: -1;
-    background-image: url(/BgCircle-removebg-preview.png);
-}
- #bgimage{
-    height: 93%;
-    width: 80%;
-    padding-top: 10%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;background-size: cover;
-    position: sticky;
-    flex: -1;
-} */
 
 .header-text {
     width: 100vh;
@@ -150,6 +141,7 @@ nav ul hr{
     margin-top: 10%;
     margin-bottom: 20%;
 }
+
 .info h2{
     color: #71c2e5;
 }

@@ -1,0 +1,170 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/BlueTextureBG.jpg");
+    background-size: cover;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+/* #header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+} */
+
+/* nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+} */
+nav {
+    display: flex;
+    width: 100vw;
+    height: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    background-color: #070e16;
+}
+
+nav ul img {
+    height: 70px;
+    padding-left: 5px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-top: 1%;
+    position: relative;
+    float: right;
+    padding-left: 80px;
+    padding-right: 2%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #69c6ff;
+    font-size: 25px;
+    position: relative;
+    align-content: right;
+    margin: 0%;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    text-decoration-color: black;
+}
+
+nav ul hr {
+    margin: 0px;
+    height: 2px;
+    background-color: #62b6cb;
+}
+.balls {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    margin-top: 160px;
+}
+.balls a {
+    text-decoration: none;
+}
+.ball {
+    background-color: #afe7ff;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.ball:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ball h1 {
+    font-size: 20px;
+    color: #343a40;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.ball i {
+    margin: 0 5px;
+    color: #007bff;
+}
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
