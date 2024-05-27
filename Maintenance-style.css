@@ -24,6 +24,7 @@ header {
     background-image: url("/BlueTextureBG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -200;
 }
 
 #header .container nav ul{
@@ -101,97 +102,78 @@ nav ul hr{
     background-color: #62b6cb;
 }
 
-.workshopLayout img{
+/* .workshopLayout img{
     height: 120%;
     margin-top: 10%;
     margin-left: 8.5%;
+} */
+
+.printer { grid-area: printer;}
+.tableSaw { grid-area: tableSaw;}
+.smoothening { grid-area: smoothening;}
+.painting { grid-area: painting;}
+.fitting { grid-area: fitting;}
+.welding { grid-area: welding;}
+.lathe { grid-area: lathe;}
+.office { grid-area: office;}
+.lobby { grid-area: lobby;}
+
+.layoutGrid{
+    display: grid;
+    padding: 10px;
+    grid-template-areas:  
+        'printer printer welding welding tableSaw smoothening'
+        'printer printer welding welding tableSaw smoothening'
+        'lobby lobby welding welding tableSaw smoothening'
+        'lobby lobby lobby lobby lobby smoothening'
+        'lathe lathe lathe fitting office painting'
+        'lathe lathe lathe fitting office painting';
+    gap: 7px;
+    background-color: black;
+}
+
+.layoutGrid > div{
+    padding: 20px;
 }
 
 .printer img{
-    margin-right: -20%;
-    position: absolute;
-    height: 20vh;
-    width: 20vw;
-    left: 12.5vh;
-    top: 21vh;
-    border: 4px solid aqua;
-    border-radius: 4px;
+    height: 100px;
+    width: auto;
 }
 
 .tableSaw img{
-    margin-right: -20%;
-    position: absolute;
-    height: 28vh;
-    width: 19vw;
-    right: 91.7vh;
-    top: 21.5vh;
-    border: 4px solid aqua;
-    border-radius: 4px;
+    height: 100px;
+    width: auto;
 }
 
 .smoothening img{
-    margin-right: -20%;
-    position: absolute;
-    height: 28vh;
-    right: 54.3vh;
-    top: 23vh;
-    border: 4px solid aqua;
-    border-radius: 4px;
+    height: 100px;
+    width: auto;
 }
 
 .painting img{
-    margin-right: -20%;
-    position: absolute;
-    height: 31vh;
-    width: 16vw;
-    right: 54vh;
-    bottom: 4vh;
-    border: 4px solid aqua;
-    border-radius: 4px;
+    height: 100px;
+    width: auto;
 }
 
 .fitting img{
-    margin-right: -20%;
-    position: absolute;
-    height: 23.5vh;
-    width: 15vw;
-    right: 136vh;
-    bottom: 4vh;
-    border: 4px solid aqua;
-    border-radius: 4px;
+    height: 100px;
+    width: auto;
 }
 
 .welding img{
-    margin-right: -20%;
-    position: absolute;
-    height: 28vh;
-    width: 27vw;
-    left: 59vh;
-    top: 21.5vh;
-    border: 4px solid aqua;
-    border-radius: 4px;
+    height: 100px;
+    width: auto;
 }
 
 .lathe img{
-    margin-right: -20%;
-    position: absolute;
-    height: 22vh;
-    width: 32vw;
-    left: 12.5vh;
-    bottom: 4vh;
-    border: 4px solid aqua;
-    border-radius: 4px;
+    height: 100px;
+    width: auto;
 }
 
 .office img{
-    margin-right: -20%;
-    position: absolute;
-    height: 22vh;
-    width: 19vw;
-    right: 91.7vh;
-    bottom: 4vh;
-    border: 4px solid aqua;
-    border-radius: 4px;
+    height: 100px;
+    width: auto;
 }
 
 /* .office{
@@ -210,7 +192,7 @@ nav ul hr{
     display: inline-block;
     border-bottom: 1px dotted black;
   } */
-  
+/*   
   .office .working{
     visibility: hidden;
     width: 120px;
@@ -242,4 +224,4 @@ nav ul hr{
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
-  }
+  } */
